@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <header>
+
+    <h1>
+      <%= title %>
+    </h1>
+    <p>Welcome to <%= title %>
+    </p>
+
+  </header>
+
+
+  <main>
+    <h1 style="text-align:center;color:<%= colour %>;">
+      <%= name %>
+    </h1>
+    <form action="/" method="post">
+      <select name="selected" id="selected" style="width:100%; height:auto; font-size:30px;text-align:center;">
+        <option value="RED">Red</option>
+        <option value="GREEN">Green</option>
+        <option value="BLUE">Blue</option>
+        <option value="BLACK">Black</option>
+      </select>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <button type="submit" style="width:100%; height:auto; font-size:30px;text-align:center;">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Created by Jack Jones</p>
+  </footer>
+
+
+  <script>
+    document.cookie = "correctColourGuess=<%= colour %>";
+  </script>
+
+</body>
+
+</html>
